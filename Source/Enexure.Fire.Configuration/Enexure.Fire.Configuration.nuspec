@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <!--
+	<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+	-->
+	<projectUrl>https://github.com/enexure/Enexure.Fire.Configuration</projectUrl>
+    <iconUrl>https://raw.github.com/Enexure/Enexure.Fire.Configuration/master/Icons/Logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release of Enexure.Fire.Configuration.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Helpers Enexure Fire</tags>
+	
+	<!--
+	<dependencies> 
+		<group>
+			<dependency id="Enexure.Fire" />
+		</group>
+	</dependencies>
+	-->
+   
+  </metadata>
+</package>
