@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Enexure/Enexure.Fire.Configuration/blob/master/License.md</licenseUrl>
+    <projectUrl>https://github.com/Enexure/Enexure.Fire.Configuration</projectUrl>
+    <iconUrl>https://raw.github.com/Enexure/Enexure.Fire.Configuration/master/Logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <tags>Configuration Enexure Fire</tags>
+    <dependencies>
+		<dependency id="Enexure.Fire" Version="1.0.0.4" />
+    </dependencies>
+  </metadata>
+</package>
