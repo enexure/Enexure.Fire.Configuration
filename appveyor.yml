@@ -1,6 +1,5 @@
 version: '{build}'
 configuration: Release
-services: mssql2012sp1
 before_build:
 - ps: '& ".\build\runner.ps1" Version'
 build:

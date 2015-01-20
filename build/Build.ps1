@@ -6,17 +6,7 @@ properties {
 	$solutionDir = Resolve-Path "$PSScriptRoot\.."
 }
 
-task default -depends Package
-
-task Package -depends Compile, Clean { 
-	#& $nuget pack 
-}
-
-task Compile -depends Version, Clean { 
-	Write-Host "Version: $Version"
-	$solutionPath = "$solutionDir\Enexure.Fire.Configuration.sln"
-	Invoke-MsBuild $solutionPath -MSBuildProperties @{ Configuration = "Release" }
-}
+task default -depends Version
 
 task Version -depends Clean {
 
@@ -47,10 +37,8 @@ task Version -depends Clean {
 	"[assembly: AssemblyFileVersion(`"$version`")]"
 
 	Set-Content $versionFile $versionFileContents
-}
-
-task Clean { 
 	
+	Write-Host "File: $versionFile saved"
 }
 
 task ? -Description "Helper to display task info" {
