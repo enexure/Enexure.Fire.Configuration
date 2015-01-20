@@ -8,7 +8,7 @@ properties {
 
 task default -depends Version
 
-task Version -depends Clean {
+task Version {
 
 	$versionSourceFile = "$solutionDir\src\Enexure.Fire.Configuration\Version.json"
 	$versionSourceFileContents = [string](Get-Content $versionSourceFile)
