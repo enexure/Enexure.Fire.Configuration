@@ -5,9 +5,10 @@ before_build:
 after_build:
 - ps: '& ".\build\runner.ps1" HowdItGo'
 build:
-  publish_nuget: true
-  publish_nuget_symbols: true
-  verbosity: minimal
+#  publish_nuget: true
+#  publish_nuget_symbols: true
+#  verbosity: minimal
+  verbosity: high
 deploy:
 - provider: Environment
   name: Public Nuget
