@@ -9,7 +9,7 @@ properties {
 task default -depends Version
 
 task HowdItGo {
-	ls *.dll -r | % versioninfo
+	ls $solutionDir *.dll -r | % versioninfo
 }
 
 task Version {
