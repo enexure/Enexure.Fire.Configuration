@@ -42,15 +42,7 @@ task Version {
 
 	Set-Content $versionFile $versionFileContents
 	
-	Write-Host "File: $versionFile saved"
-	
-	$content = Get-Content $versionFile
-	
-	Write-Host $content
-	Write-Host "Loaded $versionFile"
-	
-	ls (Split-Path $versionFile)
-	
+	Write-Host "File: $versionFile saved"	
 }
 
 task ? -Description "Helper to display task info" {
