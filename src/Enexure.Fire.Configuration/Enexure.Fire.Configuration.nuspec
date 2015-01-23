@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Enexure.Fire.Configuration</id>
-    <version>$version$</version>
+    <version>1.0.0.17</version>
     <authors>$author$</authors>
     <owners>$author$</owners>
     <licenseUrl>https://github.com/Enexure/Enexure.Fire.Configuration/blob/master/License.md</licenseUrl>
