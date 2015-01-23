@@ -8,6 +8,10 @@ properties {
 
 task default -depends Version
 
+task HowdItGo {
+	ls *.dll -r | % versioninfo
+}
+
 task Version {
 
 	$versionSourceFile = "$solutionDir\src\Enexure.Fire.Configuration\Version.json"
@@ -39,6 +43,14 @@ task Version {
 	Set-Content $versionFile $versionFileContents
 	
 	Write-Host "File: $versionFile saved"
+	
+	$content = Get-Content $versionFile
+	
+	Write-Host $content
+	Write-Host "Loaded $versionFile"
+	
+	ls (Split-Path $versionFile)
+	
 }
 
 task ? -Description "Helper to display task info" {
